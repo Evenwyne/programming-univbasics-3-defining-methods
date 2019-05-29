@@ -178,7 +178,7 @@ must provide an `end` keyword.
 > **TIP**: A good practice is to define the method and then immediately close
 > it with `end` _before_ writing the _body_. Many expressions in Ruby use
 > `do...end` and it can be confusing to keep them all straight. By creating the
-> `def (name)`...`end` "bookends," and _then_ fillig out the implementation,
+> `def (name)`...`end` "bookends," and _then_ filling out the implementation,
 > we help prevent possible confusion.
 >
 > ```ruby
@@ -243,7 +243,7 @@ $
 
 You'll notice that when you run your program, there is no output and nothing
 happens. We successfully _defined_ the method, but never _executed_ or _called_
-it anywhere in the code. It's like we screwed in a new lightbulb, but never
+it anywhere in the code. It's like we screwed in a new light bulb, but never
 flipped the switch to "on." Ruby reads your definition of `greeting` and then
 says..."I'm done. Exit." Let's give it something to do before exiting: _call_
 `greeting`.
@@ -316,7 +316,7 @@ end
 say_greeting_five_times
 ```
 
-You should start to see that bigger programs could be build of methods caling
+You should start to see that bigger programs could be build of methods calling
 sub-methods and those sub-methods calling sub-sub-methods &mdash; just like
 we suggested in our example about "getting ready to go to work."
 
