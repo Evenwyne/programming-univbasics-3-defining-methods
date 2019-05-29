@@ -90,7 +90,7 @@ change versus making _10_ changes.
 But all those `puts` appearing multiple times...there's something...that
 bothers our programmer brains about this. It's seeing _so much repetition_.
 
-![We sense something wrong about this](https://gph.is/2AinZom)
+![We sense something wrong about this](https://media.giphy.com/media/3o6fIZjYglR6qpOXKM/giphy.gif)
 
 Could we reduce the repetition somehow?
 
