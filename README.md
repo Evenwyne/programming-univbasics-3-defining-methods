@@ -17,6 +17,8 @@ other sub-activities, and sub-sub activities. "Take a shower" involves steps
 like "wash hair" which itself has steps like "wet head under shower", "apply
 shampoo", etc.
 
+![breaking down steps of activities and sub-activities](https://curriculum-content.s3.amazonaws.com/prework/group-of-actions.png)
+
 Nearly all programming languages have the idea of "bundling up work" under a
 programmer-created name. While different languages might call them
 "subroutines," "methods," or "functions," they all mean the same thing:
