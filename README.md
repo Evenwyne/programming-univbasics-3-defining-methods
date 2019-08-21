@@ -3,7 +3,7 @@
 ## Learning Goals
 
 - Demonstrate abstraction with methods
-- Define DRY
+- Define "DRY"
 - Recognize the structure of a method
 - Recognize how to call methods
 - Practice method calls
