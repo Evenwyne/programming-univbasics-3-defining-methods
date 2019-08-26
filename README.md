@@ -143,7 +143,7 @@ and effort, is easy to maintain, and also reduces the chances of bugs. When we
 see unsophisticated repetition, we want to reach for a form of _abstraction_.
 Creating methods is a common and powerful tool for abstraction.
 
-> Numerous doctoral research projects have looked at the relationship between
+> Many research projects have looked at the relationship between
 > lines of code and bugs. It turns out the only significant predictor of fewer
 > bugs is..._fewer lines of code_!
 
@@ -160,9 +160,15 @@ end
 When we define a method in Ruby, we use the `def` keyword. A method's name
 should begin with a lowercase letter.
 
-The first line of `def say_hello_world` is called the method _signature_, it
-defines the basic properties of the method including the name of the method,
-`greeting`. We'll learn more about the other properties later. The name of a
+The first line of `def say_hello_world` is called the method _signature_.
+The most important information in the _signature_ is the method name. In the
+example, the name of the method is `say_hello_world`.
+
+> Later, we'll learn other things that we should put in the _signature_
+> (helpful little variables called _parameters_), but for the time being we'll
+> only define the method name in the _signature_.
+
+The name of a
 method should suggest what it does. If you need multiple words, Rubyists use a
 `_` to separate them. Separating words by an underscore (`_`) is called
 _snake-case_ (because the shape looks like the words were swallowed up by a
@@ -172,15 +178,15 @@ Once you begin a method definition with the `def` keyword, all following lines
 _until_ the method's closing `end` keyword are called the method's _body_ or
 the method's _implementation_. The _implementation_ is the actual code that your
 method will run every time it's called. It's standard practice to indent the
-body by two spaces.
+body by two spaces when programming Ruby.
 
-After multiple bits of work (expressions, variables set and looked up, etc.) we
+After multiple bits of work in the _implementation_ or _body_, we
 must provide an `end` keyword.
 
 > **TIP**: A good practice is to define the method and then immediately close
 > it with `end` _before_ writing the _body_. Many expressions in Ruby use
-> `do...end` and it can be confusing to keep them all straight. By creating the
-> `def (name)`...`end` "bookends," and _then_ filling out the implementation,
+> `do...end` and it can be confusing to keep them all balanced. By creating the
+> `def (name)`...`end` "bookends," and _then_ filling in the implementation,
 > we help prevent possible confusion.
 >
 > ```ruby
@@ -189,18 +195,9 @@ must provide an `end` keyword.
 > end # type this second
 > ```
 
-Look at the method definition for `greeting` again and make sure it makes sense:
-
-```ruby
-def greeting
-  puts "Hello World" # Now code the body of the method.
-end
-```
-
 All this work _defines_ a method. It does not _run_ it &mdash; yet. We must
 _define_ it before we can _use_. Think of it like writing a recipe: writing
-the recipe does not mean doing the work of preparing the dish. If it were that
-easy, we'd all have much fancier dinners at home!
+the recipe does not mean doing the work of preparing the dish.
 
 ## Recognize How to Call Methods
 
