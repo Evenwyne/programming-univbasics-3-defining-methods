@@ -44,7 +44,7 @@ puts "Hello World!"
 puts "Hello World!"
 ```
 
-This meets the requirement alright. Now imagine that later in your program you
+This meets the requirement all right. Now imagine that later in your program you
 want to say "Hello World!" five times _again_. We would have to write "Hello
 World!" five more times.
 
@@ -55,7 +55,7 @@ puts "Hello World!"
 puts "Hello World!"
 puts "Hello World!"
 
-# Other work here....
+# Other work here...
 
 puts "Hello World!"
 puts "Hello World!"
@@ -75,7 +75,7 @@ puts message
 puts message
 puts message
 
-# Other work here....
+# Other work here...
 
 puts message
 puts message
