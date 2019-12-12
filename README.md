@@ -3,7 +3,7 @@
 ## Learning Goals
 
 - Demonstrate abstraction with methods
-- Define DRY
+- Define "DRY"
 - Recognize the structure of a method
 - Recognize how to call methods
 - Practice method calls
@@ -14,8 +14,10 @@ _Methods_ are used to bundle one or more activities into a single unit. In
 daily life we do this all the time: "get ready for work" means: "take a shower,
 walk the dog, eat breakfast." But each of _those_ activities is made up of
 other sub-activities, and sub-sub activities. "Take a shower" involves steps
-like "wash hair" which itself has steps like "wet head under shower", "apply
+like "wash hair" which itself has steps like "wet head under the shower", "apply
 shampoo", etc.
+
+![breaking down steps of activities and sub-activities](https://curriculum-content.s3.amazonaws.com/prework/group-of-actions.png)
 
 Nearly all programming languages have the idea of "bundling up work" under a
 programmer-created name. While different languages might call them
@@ -42,7 +44,7 @@ puts "Hello World!"
 puts "Hello World!"
 ```
 
-This meets the requirement alright. Now imagine that later in your program you
+This meets the requirement all right. Now imagine that later in your program you
 want to say "Hello World!" five times _again_. We would have to write "Hello
 World!" five more times.
 
@@ -53,7 +55,7 @@ puts "Hello World!"
 puts "Hello World!"
 puts "Hello World!"
 
-# Other work here....
+# Other work here...
 
 puts "Hello World!"
 puts "Hello World!"
@@ -73,7 +75,7 @@ puts message
 puts message
 puts message
 
-# Other work here....
+# Other work here...
 
 puts message
 puts message
@@ -82,7 +84,7 @@ puts message
 puts message
 ```
 
-Here we made use of a variable to store the message, and didn't change anything
+Here we made use of a variable to store the message and didn't change anything
 else. You should be able to see here that by doing this our code is easier to
 change. From "Hello World!" we could easily go to "Hola Mundo!" by making _one_
 change versus making _10_ changes.
@@ -135,13 +137,13 @@ see ways of making this code _even more_ abstract.
 
 ## Define DRY
 
-DRY stand for "Don't Repeat Yourself," a basic principle of software development
+DRY stands for "Don't Repeat Yourself," a basic principle of software development
 aimed at reducing repetition of information. Less code is good: It saves time
 and effort, is easy to maintain, and also reduces the chances of bugs. When we
 see unsophisticated repetition, we want to reach for a form of _abstraction_.
 Creating methods is a common and powerful tool for abstraction.
 
-> Numerous doctoral research projects have looked at the relationship between
+> Many research projects have looked at the relationship between
 > lines of code and bugs. It turns out the only significant predictor of fewer
 > bugs is..._fewer lines of code_!
 
@@ -158,11 +160,17 @@ end
 When we define a method in Ruby, we use the `def` keyword. A method's name
 should begin with a lowercase letter.
 
-The first line of `def say_hello_world` is called the method _signature_, it
-defines the basic properties of the method including the name of the method,
-`greeting`. We'll learn more about the other properties later. The name of a
+The first line of `def say_hello_world` is called the method _signature_.
+The most important information in the _signature_ is the method name. In the
+example, the name of the method is `say_hello_world`.
+
+> Later, we'll learn other things that we should put in the _signature_
+> (helpful little variables called _parameters_), but for the time being we'll
+> only define the method name in the _signature_.
+
+The name of a
 method should suggest what it does. If you need multiple words, Rubyists use a
-`_` to separate them. Separating words by underscore (`_`) is called
+`_` to separate them. Separating words by an underscore (`_`) is called
 _snake-case_ (because the shape looks like the words were swallowed up by a
 snake).
 
@@ -170,15 +178,15 @@ Once you begin a method definition with the `def` keyword, all following lines
 _until_ the method's closing `end` keyword are called the method's _body_ or
 the method's _implementation_. The _implementation_ is the actual code that your
 method will run every time it's called. It's standard practice to indent the
-body by two spaces.
+body by two spaces when programming Ruby.
 
-After multiple bits of work (expressions, variables set and looked up, etc.) we
+After multiple bits of work in the _implementation_ or _body_, we
 must provide an `end` keyword.
 
 > **TIP**: A good practice is to define the method and then immediately close
 > it with `end` _before_ writing the _body_. Many expressions in Ruby use
-> `do...end` and it can be confusing to keep them all straight. By creating the
-> `def (name)`...`end` "bookends," and _then_ filling out the implementation,
+> `do...end` and it can be confusing to keep them all balanced. By creating the
+> `def (name)`...`end` "bookends," and _then_ filling in the implementation,
 > we help prevent possible confusion.
 >
 > ```ruby
@@ -187,18 +195,9 @@ must provide an `end` keyword.
 > end # type this second
 > ```
 
-Look at the method definition for `greeting` again and make sure it makes sense:
-
-```ruby
-def greeting
-  puts "Hello World" # Now code the body of the method.
-end
-```
-
 All this work _defines_ a method. It does not _run_ it &mdash; yet. We must
 _define_ it before we can _use_. Think of it like writing a recipe: writing
-the recipe does not mean doing the work of preparing the dish. If it were that
-easy, we'd all have much fancier dinners at home!
+the recipe does not mean doing the work of preparing the dish.
 
 ## Recognize How to Call Methods
 
@@ -258,7 +257,7 @@ end
 greeting
 ```
 
-Now we've called the method at the bottom our file. Save this file and run it
+Now we've called the method at the bottom of our file. Save this file and run it
 with `ruby greeting.rb`. You'll see:
 
 ```bash
@@ -298,7 +297,7 @@ $
 The word `greeting` will execute the body of the defined method for each
 time it was called.
 
-As a final step we could write a method to do the work of "say greeting five times:"
+As a final step, we could write a method to do the work of "say greeting five times:"
 
 ```ruby
 def greeting
@@ -332,4 +331,3 @@ programmer. You'll have to use them often, in big or small programs.
 [Ruby Programming/Syntax/Method Calls](https://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Method_Calls)
 [Ruby - Methods](https://www.tutorialspoint.com/ruby/ruby_methods.htm)
 [Ruby Methods](https://www.w3resource.com/ruby/ruby-methods.php)
-
