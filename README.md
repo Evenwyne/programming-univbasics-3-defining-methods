@@ -27,6 +27,14 @@ grouping work under a name that _we_ think is appropriate.
 In this lesson we'll introduce methods, distinguish them from data types, and
 cover how to create and execute them in your Ruby program.
 
+## Video: Introduction to Methods
+
+This video introduces the basics of defining and calling methods in Ruby. We will
+review the discussed concepts in detail in this and the following lessons, but
+this is a great overview of everything we will learn in this section:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nTL_65lh76o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Demonstrate Abstraction With Methods
 
 Methods define a new thing that your program can do. While variables in Ruby
