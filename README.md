@@ -27,7 +27,7 @@ grouping work under a name that _we_ think is appropriate.
 In this lesson we'll introduce methods, distinguish them from data types, and
 cover how to create and execute them in your Ruby program.
 
-## Video: Introduction to Methods
+## Video: Methods
 
 This video provides an overview of everything we will learn and practice in next
 few lessons. We will revisit each of the discussed concepts in detail, but watching
