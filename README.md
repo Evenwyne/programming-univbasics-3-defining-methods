@@ -35,6 +35,8 @@ this video now will give you a good high-level view of how methods work.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nTL_65lh76o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+[Methods](https://youtu.be/nTL_65lh76o)
+
 ## Demonstrate Abstraction With Methods
 
 Methods define a new thing that your program can do. While variables in Ruby
